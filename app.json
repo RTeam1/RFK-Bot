@@ -1,0 +1,7 @@
+{
+  "name": "RFK-Bot",
+  "description": "RFK Bot",
+  "repository": "https://github.com/RTeam1/RFK-Bot",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["bot", "whatsapp", "whatsapp-bot"]
+}
