@@ -241,14 +241,3 @@ async function _quickTest() {
 _quickTest()
   .then(() => conn.logger.info('Quick Test Done'))
   .catch(console.error)
-
-
-//let fs = require('fs')
-let chalk = require('chalk')
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-  fs.unwatchFile(file)
-  console.log(chalk.redBright("Update 'main.js'"))
-  delete require.cache[file]
-  //if (global.reloadHandler) console.log(global.reloadHandler())
-})
