@@ -6,7 +6,7 @@ let handler = async (m, { conn, isAdmin, isOwner }) => {
   m.reply(sukses)
 }
 //handler.command = /^admin.$/i
-handler.customPrefix = /^(saya|me)$/i
+handler.customPrefix = /^(saya|me|admin)$/i
 handler.command = new RegExp
 
 handler.rowner = true

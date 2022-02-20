@@ -1,3 +1,5 @@
+// By Ariffb
+
 let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}

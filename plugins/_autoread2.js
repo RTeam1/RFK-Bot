@@ -6,15 +6,15 @@ RyuuZeyy is The Real owner of RFK
 let handler = async (m, { conn, usedPrefix, text, isAdmin, isOwner }) => {
 
 if (!isOwner) return m.reply('Lu Owner kah Dekkk?')
-if (modepublic === true) return m.reply('udah public bodo\n\nOwner nya bodo gesss')
-if (modepublic === true) return 
-modepublic = true
-m.reply(`Success Activated Mode Public`)
+if (autoreyad === false) return m.reply('udah Otomatis Online bodo\n\nOwner nya bodo gesss')
+if (autoreyad === false) return 
+autoreyad = false
+m.reply(`Success DeActivated Mode Auto Read`)
 
 }
-handler.help = ['public']
+handler.help = ['offread']
 handler.tags = ['info', 'main']
 
-handler.command = /^(public|publik)$/i
+handler.command = /^(offr|offread)$/i
 
 module.exports = handler

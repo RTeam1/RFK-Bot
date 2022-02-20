@@ -8,8 +8,8 @@ m.reply(`Success Activated Mode Public`)
 */
 conn.send2Button(m.chat, 'Pilih Mode self atau publik?', footer, 'Self', '#self', 'Publick', '#publik',m)
 }
-//handler.help = ['mode']
-//handler.tags = ['info', 'main']
+handler.help = [' mode']
+handler.tags = ['info', 'main']
 
 //handler.command = /^(modebot|mode)$/i
 handler.customPrefix = /^(modebot|mode)$/i

@@ -6,15 +6,15 @@ RyuuZeyy is The Real owner of RFK
 let handler = async (m, { conn, usedPrefix, text, isAdmin, isOwner }) => {
 
 if (!isOwner) return m.reply('Lu Owner kah Dekkk?')
-if (modepublic === true) return m.reply('udah public bodo\n\nOwner nya bodo gesss')
-if (modepublic === true) return 
-modepublic = true
-m.reply(`Success Activated Mode Public`)
+if (autovn === false) return m.reply('Auto VN udah mati bodo\n\nOwner nya bodo gesss')
+if (autovn === false) return 
+autovn = false
+m.reply(`Success Deactivated Mode Auto Recording`)
 
 }
-handler.help = ['public']
+handler.help = ['offvn']
 handler.tags = ['info', 'main']
 
-handler.command = /^(public|publik)$/i
+handler.command = /^(offv|offvn)$/i
 
 module.exports = handler
