@@ -14,7 +14,7 @@ try {
     } else if (args[0]) stiker = await sticker(false, args[0], global.packname, require('awesome-phonenumber')(global.author). getNumber('international'))
   } finally {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
-      quoted: m, contextInfo:{externalAdReply: {title: run, body: 'RFK ~ REY', sourceUrl: linkf, thumbnail: global.thumb1}}
+      quoted: m, contextInfo:{externalAdReply: {title: '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧', body: '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧', sourceUrl: linkf, thumbnail: global.thumb1}}
     })
     else throw 'Conversion failed'
   }
