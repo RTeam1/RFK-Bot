@@ -14,7 +14,7 @@
 // thank you to ALL Bot creator
 // and thanks you to who support my Bot
 
-/* 
+/*  
 Note : Bagi yang merasa kode Anda ada di script ini...
 Namun nama Anda tidak disebutkan di config.js ini
 Saya minta maaf sebesar-besarnya, 
