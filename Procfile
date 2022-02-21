@@ -1,1 +1,1 @@
-worker: node . --autoread
+worker: npm start
