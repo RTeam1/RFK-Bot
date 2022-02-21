@@ -19,9 +19,11 @@ npm start
 
 ## Script Ori :
 * [`Nurutomo`](https://github.com/Nurutomo)
-*[Nurutomo](https://github.com/Nurutomo)
+* [Nurutomo](https://github.com/Nurutomo)
 
 
 ## Diperbagus Oleh :
 * [`ReyKings`](https://github.com/RTeam1)
-*[ReyToddd](https://github.com/RTeam1)
+* [ReyToddd](https://github.com/RTeam1)
+
+[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
