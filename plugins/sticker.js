@@ -41,7 +41,7 @@ let gc = conn.getName(m.chat)
     } else if (args[0]) stiker = await sticker(false, args[0], global.packname, global.author)
   } finally {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
-      quoted: m, contextInfo:{externalAdReply: {title: run, body: 'Simple WhatsApp Bot', sourceUrl: linkf, thumbnail: thumb3}}
+      quoted: m, contextInfo:{externalAdReply: {title: '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧', body: 'WhatsApp Bot', sourceUrl: linkf, thumbnail: thumb3}}
     })
     else throw 'Conversion failed'
   }
