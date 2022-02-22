@@ -18,7 +18,7 @@ let handler = async (m, { conn, text }) => {
 _Oky Arigatoddd_
 
 `.trim()
-conn.send3ButtonLoc(m.chat, await (await fetch(fla + 'Dawnfrost')).buffer(), ext, footer, 'Nomor Owner', '.nowner', 'Donasi', '.donasi', 'Sewa Bot', '.sewa', m)
+conn.send3ButtonLoc(m.chat, await (await fetch(fla + namaowner)).buffer(), ext, footer, 'Nomor Owner', '.nowner', 'Donasi', '.donasi', 'Sewa Bot', '.sewa', m)
 
 }
 handler.help = ['owner', 'creator']
