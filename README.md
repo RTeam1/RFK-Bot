@@ -1,7 +1,9 @@
 ##### No Sosmed
 ```
 Makasih yang udah ngirim Virtext🙂
-Bocil kontol skill cuma "Virtext"
+
+Untuk Bocil Beban keluarga skill cuma "Virtext" 
+Semoga Amal ibadah nya diterima di sisi Tuhan
 ```
 
 
