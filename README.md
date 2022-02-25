@@ -1,6 +1,6 @@
-## No Sosmed
+#### No Sosmed
 ```
-Thanks😊
+Thanks🙂
 ```
 
 
