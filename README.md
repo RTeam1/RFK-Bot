@@ -1,6 +1,7 @@
-#### No Sosmed
+##### No Sosmed
 ```
-Thanks🙂
+Makasih yang udah ngirim Virtext🙂
+Bocil kontol skill cuma "Virtext"
 ```
 
 
