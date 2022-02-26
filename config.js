@@ -12,6 +12,7 @@
 // Thank you to Dawnfrost
 // Thank you to MFarelS as MagerNulis
 // Thank you to Benny Ismael
+// Fernazeer
 // Thank you to Ridho as api.lolhuman.xyz
 // Thank you to Starz as xteam.xyz
 // Thank you to ALL Bot creator
