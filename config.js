@@ -1,24 +1,27 @@
 // Bismillahirrahmanirrahim
-// thank you to ALLAH Subhanahu wata'ala
-// thank you to Rey Alfarizi as Leader RFK Team
-// thank you to Arya Kings as Leader Companion RFK
-// thank you to RFK-TEAM
-// thank you to Real Fams Killer
-// thank you to Alip as Litrhap
-// thank you to RlxFly / Parell
-// thank you to Nurutomo as wabot-aq
-// thank you to ariffb as stikerinbot
-// thank you to Bochil Gaming
-// thank you to Dawnfrost
-// thank you to MFarelS as MagerNulis
-// thank you to ALL Bot creator
+// Thank you to ALLAH Subhanahu wata'ala
+// Thank you to Rey Alfarizi as Leader RFK Team
+// Thank you to Arya Kings as Leader Companion RFK
+// Thank you to RFK-TEAM
+// Thank you to Real Fams Killer
+// Thank you to Alip as Litrhap
+// Thank you to RlxFly / Parell
+// Thank you to Nurutomo as wabot-aq
+// Thank you to ariffb as stikerinbot
+// Thank you to Bochil Gaming
+// Thank you to Dawnfrost
+// Thank you to MFarelS as MagerNulis
+// Thank you to Benny Ismael
+// Thank you to Ridho as api.lolhuman.xyz
+// Thank you to Starz as xteam.xyz
+// Thank you to ALL Bot creator
 // and thanks you to who support my Bot
 
 /*  
 Note : Bagi yang merasa kode Anda ada di script ini...
 Namun nama Anda tidak disebutkan di config.js ini
 Saya minta maaf sebesar-besarnya, 
-dan Silahkan hubungi Saya di WhatsApp 
+dan Silahkan hubungi Saya di Instagram
 supaya saya menambahkan nama Anda disini
 
 >>> DILARANG KERAS MENGHAPUS THANKS TO <<<
