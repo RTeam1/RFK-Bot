@@ -2,8 +2,15 @@
 ```
 Makasih yang udah ngirim Virtext🙂
 
-Untuk Bocil Beban keluarga skill cuma "Virtext" 
-Semoga Amal ibadah nya diterima di sisi Tuhan
+Udah mah Bocil,
+Beban keluarga,
+Skill nya cuma "Virtek" pulak
+```
+
+```
+Udah mah Bocil,
+Beban keluarga,
+Skill nya cuma "Virtek" pulak
 ```
 
 
