@@ -19,6 +19,11 @@ Orang tersebut”
 ```
 
 
+### Apikey??
+```
+lolkey = 'rey2k22'
+```
+
 ## Install
 
 ```bash
