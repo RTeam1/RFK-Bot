@@ -29,10 +29,10 @@ supaya saya menambahkan nama Anda disini
 >>> BOLEH MENAMBAHKAN, JANGAN MENGHILANGKAN <<<
 */
 
-global.linkGC = ['https://chat.whatsapp.com/invite/GLJ8l40brp3BcFodqch21J', 'https://chat.whatsapp.com/Lggj1Hl7p18ILA8gXsK2yi', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
+global.linkGC = ['https://chat.whatsapp.com/EVCGfzxLWfp81n0WhmVklH', 'https://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
 
 //Berbagai itu indah @Parel / Rxfly
-global.owner = ['6285721108765', '+62 857-2110-8765', '+62 857-2110-8765'] // Put your number here
+global.owner = ['6289677763976', '+7 922 481-65-16', '+62 838-2007-3017'] // Put your number here
 global.mods = ['2'] // Want some help?
 global.prems = ['1'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -104,9 +104,9 @@ lolKey = 'rey2k21'
 
 
 footer = '\n\n\n@ＪＥＭ － Ｂｏｔ'
-namabot = 'RAFA BOT'
+namabot = 'ＪＥＭ － Ｂｏｔ'
 bc = namabot
-//bc = 'RAFA BOT'
+//bc = 'ＪＥＭ － Ｂｏｔ'
 namaowner = 'RyuuZeyy'
 ceco = 'Ganteng 🗿'
 let tum = fs.readFileSync('./gambar1.jpeg')
@@ -118,12 +118,12 @@ global.thumb1 = tum
 global.thumb2 = tum2
 global.thumb3 = tum3
 run = 'tes'
-gc1 = 'https://chat.whatsapp.com/invite/GLJ8l40brp3BcFodqch21J'
-gc2 = 'https://chat.whatsapp.com/Lggj1Hl7p18ILA8gXsK2yi'
+gc1 = 'https://chat.whatsapp.com/FJkbQjpewltErmQRwzC9rj'
+gc2 = 'https://chat.whatsapp.com/HTcmEqjQeu1GMN2xN210QJ'
 linkf = gc1
 wm_rey = 'https://raw.githubusercontent.com/RTeam1/database/'
-namaig = 'RAFA BOT'
-namagh = 'https://github.com/RaffaStore5'
+namaig = 'https://instagram.com/bah.raid'
+namagh = 'https://github.com/RTeam1'
 kasihcaption = `support terus ${namaig}\ndan \n${namagh}`
 browsername = './RyuuTodd'
 titler = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧'//'https://ryuuzeyy.xyz'
