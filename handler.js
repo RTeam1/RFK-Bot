@@ -1,11 +1,10 @@
 //WM BY ./RYUUUTODDD
 
-modepublic = true
-autoreyad = false
-autoon = false
-autoketik = false
-autovn = false
-
+modepublic = false
+autoreyad = true
+autoon = true
+autoketik = true
+autovn = true
 
 
 let util = require('util')
@@ -34,24 +33,32 @@ module.exports = {
 //const botNumber = conn.user.jid ? conn.user.jid.split(":")[0]+"@s.whatsapp.net" : conn.user.jid
 //const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
 
-                  //Auto Online
-    if (autoon = true) conn.updatePresence(m.chat, Presence.available) //
-    
-    //Auto ketik
-    if (autoketik = true) conn.updatePresence(m.chat, Presence.composing) //
-    
-    //Auto Recording
-    if (autovn = true) conn.updatePresence(m.chat, Presence.recording) //
-    
+
     
     //if (!m.isOwner && !m.fromMe && modeself === true) return
-    
-   if (autoreyad === true) this.chatRead(m.chat)
+//if (autoreyad === true && opts['autoread']) await this.chatRead(m.chat).catch(() => { })
+//if (autoreyad === true) this.chatRead(m.chat)
    //.catch(() => { })
           break
       }
       m.exp = 0
       m.limit = false
+      
+let isRyuu = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+let isCreator = isRyuu || m.fromMe
+
+/***** Hati hati bos jangan asal recode, salah dikit bisa berakibat fatal!!! *****/
+if (autoon === true) conn.updatePresence(m.chat, Presence.available) //
+if (autoketik === true) conn.updatePresence(m.chat, Presence.composing) //
+if (autovn === true) conn.updatePresence(m.chat, Presence.recording) //
+if (autoreyad === true) await this.chatRead(m.chat).catch(() => { })
+if (!isCreator && modepublic === false) return
+if (opts['nyimak']) return
+if (opts['pconly'] && m.chat.endsWith('g.us')) return
+if (opts['gconly'] && !m.chat.endsWith('g.us')) return
+if (opts['swonly'] && m.chat !== 'status@broadcast') return
+
+
       try {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
@@ -60,7 +67,8 @@ module.exports = {
             if (!isNumber(user.level)) user.level = 0
             if (!isNumber(user.exp)) user.exp = 0
             if (!isNumber(user.title)) user.title = ''
-            if (!isNumber(user.limit)) user.limit = 10
+            if (!isNumber(user.limit)) user.limit = 150
+            if (!isNumber(user.warn)) user.warn = 0
             if (!isNumber(user.lastclaim)) user.lastclaim = 0
             if (!isNumber(user.money)) user.money = 0
             
@@ -87,7 +95,7 @@ module.exports = {
             if (!isNumber(user.anjinglastclaim)) user.anjinglastclaim = 0
 
             if (!'banned' in user) user.banned = false
-            if (!isNumber(user.warn)) user.warn = 0
+            
 
             if (!isNumber(user.afk)) user.afk = -1
             if (!'afkReason' in user) user.afkReason = ''
@@ -145,7 +153,8 @@ module.exports = {
             level: 0,
             title: '',
             exp: 0,
-            limit: 10,
+            limit: 150,
+            warn: 0,
             lastclaim: 0,
             money: 0,
             diamond: 0,
@@ -180,7 +189,6 @@ module.exports = {
             anjing: 0,
             anjinglastclaim: 0,
             banned: false,
-            warn: 0,
             afk: -1,
             afkReason: '',
             anakkucing: 0,
@@ -219,8 +227,8 @@ module.exports = {
         if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
         if (chat) {
           if (!('isBanned' in chat)) chat.isBanned = false
-          if (!('welcome' in chat)) chat.welcome = false
-          if (!('detect' in chat)) chat.detect = false
+          if (!('welcome' in chat)) chat.welcome = true
+          if (!('detect' in chat)) chat.detect = true
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = ''
@@ -228,14 +236,14 @@ module.exports = {
           if (!('descUpdate' in chat)) chat.descUpdate = true
           if (!('delete' in chat)) chat.delete = false
           if (!('antiBadword' in chat)) chat.antiBadword = true
-          if (!('rpg' in chat)) chat.delete = true
-          if (!('nsfw' in chat)) chat.delete = false
-          if (!('antiLink' in chat)) chat.antiLink = false
+          if (!('rpg' in chat)) chat.rpg = true
+          if (!('nsfw' in chat)) chat.nsfw = false
+          if (!('antiLink' in chat)) chat.antiLink = true
           if (!('viewonce' in chat)) chat.viewonce = true
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: false,
-          detect: false,
+          welcome: true,
+          detect: true,
           sWelcome: '',
           sBye: '',
           sPromote: '',
@@ -245,50 +253,39 @@ module.exports = {
           rpg: true,
           nsfw: false,
           antiBadword: true,
-          antiLink: false,
+          antiLink: true,
           viewonce: true,
         }
         
                 let settings = global.db.data.settings[this.user.jid]
         if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
         if (settings) {
-          if (!'anon' in settings) settings.anon = true
-          if (!'anticall' in settings) settings.anticall = true
+          if (!'anon' in settings) settings.anon = false
+          //if (!'anticall' in settings) settings.anticall = true
           if (!'antispam' in settings) settings.antispam = true
           if (!'antitroli' in settings) settings.antitroli = true
-          if (!'backup' in settings) settings.backup = false
+          if (!'backup' in settings) settings.backup = true
           if (!isNumber(settings.backupDB)) settings.backupDB = 0
           if (!'groupOnly' in settings) settings.groupOnly = false
           if (!'jadibot' in settings) settings.groupOnly = false
-          if (!'nsfw' in settings) settings.nsfw = true
+          if (!'nsfw' in settings) settings.nsfw = false
           if (!isNumber(settings.status)) settings.status = 0
         } else global.db.data.settings[this.user.jid] = {
-          anon: true,
-          anticall: true,
+          anon: false,
+          //anticall: true,
           antispam: true,
           antitroli: true,
-          backup: false,
+          backup: true,
           backupDB: 0,
           groupOnly: false,
           jadibot: false,
-          onsfw: true,
+          onsfw: false,
           status: 0,
         }
       } catch (e) {
         console.error(e)
       }
-      if (opts['nyimak']) return
-      //if (!m.fromMe && opts['self']) return
-             //function mode public
-             let isRyuu = [global.conn.user.jid, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-let isCreator = isRyuu || m.fromMe
-
-             if (!m.fromMe && !isCreator && modepublic === false) return
-      if (opts['pconly'] && m.chat.endsWith('g.us')) return
-      if (opts['gconly'] && !m.chat.endsWith('g.us')) return
-      if (opts['swonly'] && m.chat !== 'status@broadcast') return
-      
-
+     //
       if (typeof m.text !== 'string') m.text = ''
       for (let name in global.plugins) {
         let plugin = global.plugins[name]
@@ -305,7 +302,7 @@ let isCreator = isRyuu || m.fromMe
       }
       if (m.isBaileys) return
       //if (m.isBaileys) return
-      if (m.chat.endsWith('broadcast')) return // Supaya tidak merespon di status
+      //if (m.chat.endsWith('broadcast')) return // Supaya tidak merespon di status
       let blockList = conn.blocklist.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid)
       if (blockList.includes(m.sender)) return // Pengguna yang diblokir tidak bisa menggunakan bot
       m.exp += Math.ceil(Math.random() * 10)
@@ -525,7 +522,7 @@ let isCreator = isRyuu || m.fromMe
       } catch (e) {
         console.log(m, m.quoted, e)
       }
-      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
+     
     //this.chatRead(m.chat).catch(() => { })
     
    
@@ -592,7 +589,6 @@ Untuk mematikan fitur ini, ketik
     let users = global.db.data.users
     let user = users[from] || {}
     if (user.whitelist) return
-    if (!db.data.settings.anticall) return
     switch (this.callWhitelistMode) {
       case 'mycontact':
         if (from in this.contacts && 'short' in this.contacts[from])
@@ -607,10 +603,10 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn) => {
 	let name = conn.getName(m.sender)
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+    rowner: '⚠️☣️Akses ditolak,☣️⚠️\n\nSilahkan hubungi️ _*Pemilik Bot!*_',
+    owner: '⚠️☣️Akses ditolak,☣️⚠️\n\nSilahkan hubungi ️_*OWNER!*_',
+    mods: '⚠️☣️Akses ditolak,☣️⚠️\n\nSilahkan hubungi️ _*Moderator!*_',
+    premium: '⚠️☣️Khusus member _*Premium*_☣️⚠️',
     group: 'Perintah ini hanya dapat digunakan di grup!',
     private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
     admin: 'Perintah ini hanya untuk *Admin* grup!',
