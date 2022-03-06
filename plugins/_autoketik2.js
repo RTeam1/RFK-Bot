@@ -7,10 +7,10 @@ RyuuZeyy is The Real owner of RFK
 let handler = async (m, { conn, usedPrefix, text, isAdmin, isOwner }) => {
 
 if (!isOwner) return m.reply('Lu Owner kah Dekkk?')
-if (autoketik === false) return m.reply('udah Otomatis Online bodo\n\nOwner nya bodo gesss')
-if (autoketik === false) return 
+if (autoketik === false) return m.reply('Auto Typing udah mati Banhhh🗿🚬')
+//if (autoketik === false) return 
 autoketik = false
-m.reply(`Success Deactivated Mode Auto Ketik`)
+m.reply(`Success Deactivated Mode Auto Typing`)
 
 }
 handler.help = ['offketik']

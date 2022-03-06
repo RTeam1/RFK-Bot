@@ -1,11 +1,16 @@
 let handler = async (m) => {
-    let user = db.data.users[m.sender]
-    if (user.warn == 0) throw 'Kamu tidak memiliki warning!'
+//global.db.data.users[m.sender].warning += 1
+    let user = global.db.data.users[m.sender]
+    if (global.db.data.users[m.sender].warning = 0) throw 'Kamu tidak memiliki warning!'
+    //if (user.warn === 0) throw 'Kamu tidak memiliki warning!'
 
-    let waktu = user.lastIstigfar + 180000
-    if (new Date - user.lastIstigfar < 180000) throw `Kamu bisa menggunakan perintah ini lagi setelah ${msToTime(waktu - new Date())}`
-    user.warn -= 1
-    m.reply(`Warning: ${user.warn} / 5`)
+    let waktu = user.lastIstigfar + 960000 // 16 menit
+    if (new Date - user.lastIstigfar < 9600000) throw `Kamu bisa menggunakan perintah ini lagi setelah ${msToTime(waktu - new Date())}`
+    //global.db.data.users[m.sender].warning += -1
+    global.db.data.users[m.sender].warning -1
+    //user.warn -=1
+    m.reply(`Berhasil minta maaf\n\nWarning : ${user.warning} / 5`)
+    //m.reply(`Warning: ${global.db.data.users[m.sender].warning} / 5`)
     user.lastIstigfar = new Date * 1
 }
 handler.command = /^(astagh?fir(ullah)?|maaf)$/i

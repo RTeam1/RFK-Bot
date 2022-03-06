@@ -6,8 +6,8 @@ RyuuZeyy is The Real owner of RFK
 let handler = async (m, { conn, usedPrefix, text, isAdmin, isOwner }) => {
 
 if (!isOwner) return m.reply('Lu Owner kah Dekkk?')
-if (modepublic === false) return m.reply('udah self bodo\n\nOwner nya bodo gesss')
-if (modepublic === false) return
+if (modepublic === false) return m.reply('udah self bodo\n')
+//if (modepublic === false) return
 modepublic = false
 m.reply(`Success Activated Mode Self`)
 

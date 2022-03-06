@@ -9,8 +9,13 @@ handler.before = function (m, { isOwner, isBotAdmin }) {
     let user = global.db.data.users[m.sender]
     let isBadword = badwordRegex.exec(m.text)
 
-    if (!chat.antiBadword && !chat.isBanned && isBadword) {
-        user.warning += 1
+    if (chat.antiBadword && !chat.isBanned && isBadword) {
+    if (m.fromMe) return
+    //let user = global.db.data.users[who]
+    //m.reply(`*${user.limit}* Limit\n*$
+    //=> global.db.data.users[m.sender].limit += 1
+        //user.warning += 1
+        global.db.data.users[m.sender].warning += 1
         this.send2Button(m.chat, `*Badword terdeteksi!*
 Warning: ${user.warning} / 5
 Jika warning mencapai 5 kamu akan dibanned
@@ -18,7 +23,7 @@ Jika warning mencapai 5 kamu akan dibanned
 ketik *#on antibadword* untuk menyalakan antibadword
 ketik *#astagfirullah* atau *#maaf* untuk mengurangi warning
 
-“Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, '© stikerin', 'Nyalakan Antibadword', ',1 antibadword', 'Astaghfirullah', ',maaf', m)
+“Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, footer, 'Nyalakan Antibadword', '#on antibadword', 'Astaghfirullah', '#maaf', m)
         if (user.warning >= 5) {
             user.banned = true
             if (m.isGroup) {

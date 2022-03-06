@@ -6,7 +6,7 @@ if (modeself === false) return
 modeself = false
 m.reply(`Success Activated Mode Public`)
 */
-conn.send2Button(m.chat, 'Pilih Mode self atau publik?', footer, 'Self', '#self', 'Publick', '#publik',m)
+conn.send2Button(m.chat, 'Pilih Mode self atau publik?', footer, 'Self', '#self', 'Publik', '#publik',m)
 }
 handler.help = [' mode']
 handler.tags = ['info', 'main']
