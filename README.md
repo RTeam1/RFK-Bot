@@ -33,6 +33,12 @@ npm install
 npm start
 ```
 
+#### Tutorial :
+```
+Ketik "Publik" untuk merubah Bot menjadi mode public
+Note :
+Tanpa tanda kutip
+```
 
 
 ## Script Ori :
