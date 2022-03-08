@@ -24,8 +24,11 @@ ketik *#on antibadword* untuk menyalakan antibadword
 ketik *#astagfirullah* atau *#maaf* untuk mengurangi warning
 
 “Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, footer, 'Nyalakan Antibadword', '#on antibadword', 'Astaghfirullah', '#maaf', m)
-        if (user.warning >= 5) {
-            user.banned = true
+        //if (user.warning >= 5) {
+        if (global.db.data.users[m.sender].warning >= 5) {
+            //user.banned = true
+            let users = global.db.data.users
+            users[m.sender].banned = true
             if (m.isGroup) {
                 if (isBotAdmin) {
                     this.groupSettingChange(m.chat, GroupSettingChange.messageSend, true)
