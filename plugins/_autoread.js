@@ -9,7 +9,7 @@ if (!isOwner) return m.reply('Lu Owner kah Dekkk?')
 if (autoreyad === true) return m.reply('Auto Read udah Aktif Banh🗿🚬')
 //if (autovn === true) return 
 autoreyad = true
-m.reply(`Success Activated Mode Auto Recording`)
+m.reply(`Success Activated Mode Auto Read`)
 
 }
 handler.help = ['onread']
