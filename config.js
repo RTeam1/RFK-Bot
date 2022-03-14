@@ -32,7 +32,7 @@ supaya saya menambahkan nama Anda disini
 global.linkGC = ['https://chat.whatsapp.com/invite/GLJ8l40brp3BcFodqch21J', 'https://chat.whatsapp.com/Lggj1Hl7p18ILA8gXsK2yi', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
 
 //Berbagai itu indah @Parel / Rxfly
-global.owner = ['6285721108765', '+62 857-2110-8765', '+62 857-2110-8765'] // Put your number here
+global.owner = ['923430436852', '+92 0343-043-6852', '+92 0343-043-6852'] // Put your number here
 global.mods = ['2'] // Want some help?
 global.prems = ['1'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -107,7 +107,7 @@ footer = '\n\n\n@ＪＥＭ － Ｂｏｔ'
 namabot = 'RAFA BOT'
 bc = namabot
 //bc = 'RAFA BOT'
-namaowner = 'RyuuZeyy'
+namaowner = '💌Mian💌'
 ceco = 'Ganteng 🗿'
 let tum = fs.readFileSync('./gambar1.jpeg')
 let tum1 = fs.readFileSync('./gambar1.jpeg')
