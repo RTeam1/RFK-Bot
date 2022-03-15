@@ -3,15 +3,15 @@ let handler = async (m, { conn, text }) => {
   let ext= `
 *INFORMATION OWNER*
 
-*Name* : ./RyuuZeyy
+*Name* : ${namaowner} ${ceco}
 *Age* : 8 th
 *Kelas* : 5 SD
 *Status* : Only God can make me strong
 
 *MEDIA SOCIAL*
 
-*Instagram.com/bah.raid
-*GitHub.com/RTeam1*
+*${namaig}*
+*${namagh}*
 *Facebook* : --
 *Youtube* : --
 
