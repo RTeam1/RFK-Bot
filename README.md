@@ -1,21 +1,11 @@
 
 ```
-Makasih yang udah ngirim Virtext ke saya🙂
-__________________________________________
-Udah mah Bocil,
-Beban keluarga,
-Skill nya cuma "Virtek" pulak
-```
-
-```
-Masih mau main Virtext dan 
-mempersulit orang lain dekkkkssss?
-
-Denger ni,
-__________________________________________
-“Barang siapa yang mempersulit orang
-Lain maka Allah akan mempersulit
-Orang tersebut”
+Rey
+Arya
+Andra
+Rah de
+Rehan
+”
 ```
 
 
