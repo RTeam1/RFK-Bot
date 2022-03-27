@@ -1,38 +1,35 @@
-// Bismillahirrahmanirrahim
-// Thank you to ALLAH Subhanahu wata'ala
-// Thank you to Rey Alfarizi as Leader RFK Team
-// Thank you to Arya Kings as Leader Companion RFK
-// Thank you to RFK-TEAM
-// Thank you to Real Fams Killer
-// Thank you to Alip as Litrhap
-// Thank you to RlxFly / Parell
-// Thank you to Nurutomo as wabot-aq
-// Thank you to ariffb as stikerinbot
-// Thank you to Bochil Gaming
-// Thank you to Dawnfrost
-// Thank you to MFarelS as MagerNulis
-// Thank you to Benny Ismael
-// Fernazeer
-// Thank you to Ridho as api.lolhuman.xyz
-// Thank you to Starz as xteam.xyz
-// Thank you to ALL Bot creator
+// Bismillahirrahmanirrahim 
+// ReyTod
+// thank you to ALLAH Subhanahu wata'ala
+// thank you to Rey Alfarizi as Leader RFK Team
+// thank you to Arya Kings as Leader Companion RFK
+// thank you to RFK-TEAM
+// thank you to Real Fams Killer
+// thank you to Alip as Litrhap
+// thank you to RlxFly / Parell
+// thank you to Nurutomo as wabot-aq
+// thank you to ariffb as stikerinbot
+// thank you to Bochil Gaming
+// thank you to Dawnfrost
+// thank you to MFarelS as MagerNulis
+// thank you to ALL Bot creator
 // and thanks you to who support my Bot
 
-/*  
+/* 
 Note : Bagi yang merasa kode Anda ada di script ini...
 Namun nama Anda tidak disebutkan di config.js ini
 Saya minta maaf sebesar-besarnya, 
-dan Silahkan hubungi Saya di Instagram
+dan Silahkan hubungi Saya di WhatsApp 
 supaya saya menambahkan nama Anda disini
 
 >>> DILARANG KERAS MENGHAPUS THANKS TO <<<
 >>> BOLEH MENAMBAHKAN, JANGAN MENGHILANGKAN <<<
 */
 
-global.linkGC = ['https://chat.whatsapp.com/invite/GLJ8l40brp3BcFodqch21J', 'https://chat.whatsapp.com/Lggj1Hl7p18ILA8gXsK2yi', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
+global.linkGC = ['https://chat.whatsapp.com/tytyd.com'] // ganti jadi group lu
 
-//Berbagai itu indah @Parel / Rxfly
-global.owner = ['0'] // Put your number here
+//Berbagai itu indah @Parel / Rxfly 
+global.owner = ['6289677763976', '+7 922 481-65-16', '+6285724447078', '+6285860146165'] // Put your number here
 global.mods = ['2'] // Want some help?
 global.prems = ['1'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -49,7 +46,7 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
   'https://api.xteam.xyz': 'expired',
-  'https://api.lolhuman.xyz': 'rey2k21',
+  'https://api.lolhuman.xyz': 'rey2k22',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
@@ -57,9 +54,9 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-//global.packname = 'I hope you\'re fine'
+global.packname = 'ṚḞḲ ⸚ Ḅöẗ'
 //global.author = 'LitRHap'
-global.packname = './RyuuZeyy\n\n\n./RyuuTod\n\n\n\n\nhttps://wa.me/message/MJKHC7377YLDA1\n\n\n\n\nwa.me/62896-7776-3976\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+//global.packname = './RyuuZeyy\n\n\n./RyuuTod\n\n\n\n\nhttps://wa.me/message/MJKHC7377YLDA1\n\n\n\n\nwa.me/62896-7776-3976\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
 global.author = ''
 
 // silakan di ganti klo mau
@@ -97,18 +94,18 @@ const time = mumet().tz('Asia/Jakarta').format("HH:mm:ss DD:MM:YYYY")
 sukses = 'Suksesss...'
 
 // Mau Apa Lu? Mau ubah apikey? Awokaaokaowk Bocil
-Lolkey = 'rey2k21'
-LolKey = 'rey2k21'
-lolkey = 'rey2k21'
-lolKey = 'rey2k21'
+Lolkey = 'rey2k22'
+LolKey = 'rey2k22'
+lolkey = 'rey2k22'
+lolKey = 'rey2k22'
 
 
 footer = '\n\n\n@ＪＥＭ － Ｂｏｔ'
-namabot = 'RFK - BOT'
+namabot = 'ＪＥＭ － Ｂｏｔ'
 bc = namabot
-//bc = 'RAFA BOT'
-namaowner = 'Andra Ngentottttttt'
-ceco = 'Ganteng 🗿'
+//bc = 'ＪＥＭ － Ｂｏｔ'
+namaowner = 'Andra Kntl'
+ceco = 'Gay🗿🚬'
 let tum = fs.readFileSync('./gambar1.jpeg')
 let tum1 = fs.readFileSync('./gambar1.jpeg')
 let tum2 = fs.readFileSync('./gambar2.jpeg')
@@ -117,18 +114,17 @@ global.thumb = tum
 global.thumb1 = tum
 global.thumb2 = tum2
 global.thumb3 = tum3
-run = 'tes'
+run = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧'
 gc1 = 'https://chat.whatsapp.com/FJkbQjpewltErmQRwzC9rj'
 gc2 = 'https://chat.whatsapp.com/HTcmEqjQeu1GMN2xN210QJ'
-gc3 = 'https://chat.whatsapp.com/LYcq1G6T6YoAMsQIqKuNzw'
 linkf = gc1
 wm_rey = 'https://raw.githubusercontent.com/RTeam1/database/'
-namaig = 'RAFA BOT'
-namagh = 'https://github.com/RaffaStore5'
+namaig = 'https://instagram.com/bah.raid'
+namagh = 'https://github.com/RTeam1'
 kasihcaption = `support terus ${namaig}\ndan \n${namagh}`
 browsername = './RyuuTodd'
 titler = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧'//'https://ryuuzeyy.xyz'
-body = './RyuuZeyy'
-linkf = namagh
+body = './Riri'
+linkf = gc1
 // WM = ./ReyToddd
 // Function ini saya bikin karena saya malas ngetik
