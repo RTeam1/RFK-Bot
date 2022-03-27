@@ -1,17 +1,4 @@
-## Member
-```
-”
-Member = `
-Rey                                                        
-Arya 
-Andra 
-Rah de 
-Rehan 
-Risqy 
-Akbar`
-”
-return Member
-```
+
 
 
 ### Apikey Lolhuman??
