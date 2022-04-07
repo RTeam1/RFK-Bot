@@ -1,10 +1,14 @@
 //WM BY ./RYUUUTODDD
 
 modepublic = false
-autoreyad = true
-autoon = true
-autoketik = true
-autovn = true
+autoreyad = false
+autoon = false
+autoketik = false
+autovn = false
+pconly = false
+gconly = false
+rpc = false
+rgc = false
 
 
 let util = require('util')
@@ -52,10 +56,15 @@ if (autoon === true) conn.updatePresence(m.chat, Presence.available) //
 if (autoketik === true) conn.updatePresence(m.chat, Presence.composing) //
 if (autovn === true) conn.updatePresence(m.chat, Presence.recording) //
 if (autoreyad === true) await this.chatRead(m.chat).catch(() => { })
+// ada yang berani perbaiki autoread PC & GC only?
+if (rpc === true) await this.chatRead(m.chat.endsWith('g.us')).catch(() => { })
+if (rgc === true) await this.chatRead(!m.chat.endsWith('g.us')).catch(() => { })
 if (!isCreator && modepublic === false) return
+if (m.chat.endsWith('g.us') && !isCreator && pconly === true) return
+if (!m.chat.endsWith('g.us') && !isCreator && gconly === true) return
 if (opts['nyimak']) return
-if (opts['pconly'] && m.chat.endsWith('g.us')) return
-if (opts['gconly'] && !m.chat.endsWith('g.us')) return
+//if (opts['pconly'] && m.chat.endsWith('g.us')) return
+//if (opts['gconly'] && !m.chat.endsWith('g.us')) return
 if (opts['swonly'] && m.chat !== 'status@broadcast') return
 
 
