@@ -13,6 +13,20 @@ handler.all = async function (m) {
 Hai, ${ucapan()}
 
 ${user.banned ? 'kamu dibanned' : 'Ada yang bisa saya bantu?'}
+
+
+
+┌─〔 Status Bot 〕
+├${modepublic ? '> PUBLIC-MODE' : '> SELF-MODE'}
+├${autoreyad ? '> Otomatis Read ✅' : '> Auto Read ❌'}
+├${autoon ? '> Otomatis Online ✅' : '> Auto Online ❌'}
+├${autoketik ? '> Otomatis Ketik ✅' : '> Auto Ketik ❌'}
+├${autovn ? '> Otomatis VN ✅' : '> Auto VN ❌'}
+├${pconly ? '> Hanya respon di pribadi ✅' : '> Hanya respon di pribadi ❌'}
+├${gconly ? '> Hanya respon di grup ✅' : '> Hanya respon di grup ❌'}
+├
+└───────────────
+
 `.trim(), footer, user.banned ? 'Pemilik Bot' : 'Menu', user.banned ? '#owner' : '#menu', m)
     user.pc = new Date * 1
 }

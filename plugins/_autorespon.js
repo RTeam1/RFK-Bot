@@ -27,7 +27,7 @@ handler.all = async function (m, { isBlocked }) {
     }
 
     // ketika ada yang invite/kirim link grup di chat pribadi
-    if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
+    if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.fromMe && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
 ╠➥ *1 Bulan* :      *Rp 10000*
 ╠➥ *Permanen* : *Rp 15000*
@@ -62,8 +62,8 @@ handler.all = async function (m, { isBlocked }) {
                 year: 'numeric'
             })
             await global.db.write()
-            this.reply(global.owner[0] + '@s.whatsapp.net', `Database: ${date}`, null)
-            this.sendFile(global.owner[0] + '@s.whatsapp.net', fs.readFileSync('./database.json'), 'database.json', '', 0, 0, { mimetype: 'application/json' })
+            this.reply(global.owner[0] + '@s.whatsapp.net', `Rey Gamnteng🗿: ${date}`, null)
+            //this.sendFile(global.owner[0] + '@s.whatsapp.net', fs.readFileSync('./database.json'), 'database.json', '', 0, 0, { mimetype: 'application/json' })
             setting.backupDB = new Date() * 1
         }
     }
@@ -72,10 +72,16 @@ handler.all = async function (m, { isBlocked }) {
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} | ${namabot} by ${namaowner}`).catch(_ => _)
+        await this.setStatus(`Aktif selama ${uptime} | Mode: ${modepublic ? 'Publik' : 'Self'} | ${namabot} by ${namaowner}`).catch(_ => _)
         setting.status = new Date() * 1
     }
-
+/*
+├${modepublic ? '> PUBLIC-MODE' : '> SELF-MODE'}
+├${autoreyad ? '> Auto Read Aktif' : '> Auto Read Nonaktif'}
+├${autoon ? '> Auto Online Aktif' : '> Auto Online Nonaktif'}
+├${autoketik ? '> Auto Ketik Aktif' : '> Auto Ketik Nonaktif'}
+├${autovn ? '> Auto VN Aktif' : '> Auto VN Nonaktif'}
+*/
 }
 
 module.exports = handler

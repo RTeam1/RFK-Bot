@@ -63,10 +63,12 @@ let format = sizeFormatter({
     
 ┌─〔 Status 〕
 ├${modepublic ? '> PUBLIC-MODE' : '> SELF-MODE'}
-├${autoreyad ? '> Auto Read Aktif' : '> Auto Read Nonaktif'}
-├${autoon ? '> Auto Online Aktif' : '> Auto Online Nonaktif'}
-├${autoketik ? '> Auto Ketik Aktif' : '> Auto Ketik Nonaktif'}
-├${autovn ? '> Auto VN Aktif' : '> Auto VN Nonaktif'}
+├${autoreyad ? '> Otomatis Read ✅' : '> Auto Read ❌'}
+├${autoon ? '> Otomatis Online ✅' : '> Auto Online ❌'}
+├${autoketik ? '> Otomatis Ketik ✅' : '> Auto Ketik ❌'}
+├${autovn ? '> Otomatis VN ✅' : '> Auto VN ❌'}
+├${pconly ? '> Hanya respon di pribadi ✅' : '> Hanya respon di pribadi ❌'}
+├${gconly ? '> Hanya respon di grup ✅' : '> Hanya respon di grup ❌'}
 ├
 ├ Aktif selama ${uptime}
 ├ Baterai : ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
