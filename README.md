@@ -10,17 +10,14 @@ lolkey = 'rey2k22'
 
 ```bash
 apt update
-
 apt upgrade
-
 pkg update && pkg upgrade
-
 git clone https://github.com/RTeam1/RFK-Bot
-
-cd RFK-Bot
-
+cd && cd RFK-Bot
 npm install
-
+npm install cfonts
+npm install @adiwajshing/baileys
+bash install.sh
 npm start
 ```
 
